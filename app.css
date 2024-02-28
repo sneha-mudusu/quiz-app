@@ -1,5 +1,6 @@
 :root {
     background-image: url("./bg.jpg");
+    background-position: center;
     background-size: cover;
     font-size: 62.5%;
     /*default font size in a browser is 16px, so 62.5% will be 10px.*/
@@ -22,7 +23,7 @@
     left:0;
     width: 100%;
     padding: 20px;
-    background: rgb(30, 30, 30);;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -38,12 +39,13 @@
     /*The logo styling*/
   }
 
-  .navbar{
+  .navbar a{
     font-size: 18px;
     color: #ecf5ff;
     text-decoration: none;
     font-weight: 500;
-    margin-left: 35px;
+    margin-left: 30px;
+    transition: .3s;
   }
 
   .navbar a:hover, .navbar{
@@ -125,7 +127,9 @@
   .btn {
     font-size: 1.8rem;
     padding: 1rem 0;
+    height: 20rem;
     width: 20rem;
+    filter: drop-shadow(0 0 5px #09001d);
     text-align: center;
     border: 0.1rem solid #56a5eb;
     margin-bottom: 1rem;
@@ -136,7 +140,7 @@
   
   .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(1, 221, 255);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
   }
